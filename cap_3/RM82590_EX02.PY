@@ -1,31 +1,31 @@
-alunosImpares = []
-alunosPares = [] 
-mediaImpares = 0;
-mediaPares = 0;
+alunos_impares = []
+alunos_pares = [] 
+media_impares = 0;
+media_pares = 0;
 
 for aluno in range(1, 51):
   if (aluno % 2 == 0):
-    alunosPares.append(aluno)
+    alunos_pares.append(aluno)
   else:
-    alunosImpares.append(aluno)
+    alunos_impares.append(aluno)
 
 print("Você está digitando a nota dos alunos ímpares!")
     
-for aluno in alunosImpares:
+for aluno in alunos_impares:
   nota = float(input("Por favor, insira a nota do aluno de número {}:".format(aluno)))
-  mediaImpares += nota
+  media_impares += nota
   
-print("A média dos alúnos impares é: {:.2f}".format(mediaImpares / len(alunosImpares)))
+print("A média dos alúnos impares é: {:.2f}".format(media_impares / len(alunos_impares)))
 
 print("Você está digitando a nota dos alunos pares!")
     
-for aluno in alunosPares:
+for aluno in alunos_pares:
   nota = float(input("Por favor, insira a nota do aluno de número {}: ".format(aluno)))
-  mediaPares += nota
+  media_pares += nota
   
-print("A média dos alúnos pares é: {:.2f}".format(mediaPares / len(alunosPares)))
+print("A média dos alúnos pares é: {:.2f}".format(media_pares / len(alunos_pares)))
 
-if (mediaPares / len(alunosPares)) > (mediaImpares / len(alunosImpares)):
+if (media_pares / len(alunos_pares)) > (media_impares / len(alunos_impares)):
 
     print("Os alunos pares obtiveram a maior média")
 
